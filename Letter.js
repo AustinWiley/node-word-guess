@@ -13,8 +13,6 @@ const Letter = function (letter) {
         this.letterCheck = function (guess) {
             if (guess === this.character) {
                 this.guessedStatus = true;
-            } else {
-                // console.log('Wrong guess');
             };
         }
 };
