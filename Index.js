@@ -7,38 +7,33 @@ let random;
 let secretWord;
 let chickenNugget;
 
-const gameReset = () => {
-    console.log('------------------------New Word----------------------------\n')
-    guessesLeft = 12;
-    random = words[Math.floor(Math.random() * words.length)];
-    secretWord = new Word(random);
-    secretWord.newWord(random);
-    chickenNugget = secretWord.wordDisplay();
-    // console.log(secretWord.wordDisplay());
-    // console.log('\n------------------------------------------------------------')
-    playGame()
-}
+
 
 const checkGame = () => {
     let meatBall = secretWord.wordDisplay()
     if (meatBall === chickenNugget) {
-        console.log("INCORRECT :( ")
+        console.log("\nINCORRECT :( \n")
+        guessesLeft--;
+        console.log(guessesLeft + ' Tries left.')
     } else if (meatBall !== chickenNugget) {
-        console.log('CORRECT!!!')
+        console.log('\nCORRECT!!!')
     };
     chickenNugget = meatBall;
 
-    if (meatBall === random) {
-        console.log('You Got it!!!')
+    if (guessesLeft === 0) {
+        console.log('You Failed, NEW WORD');
+        gameReset();
+    } else if (meatBall === random) {
+        console.log('You Got it right! NEXT WORD')
         gameReset();
     } else if (meatBall !== random) {
         playGame();
-    }
+    };
 }
 
 
 const playGame = () => {
-    console.log(secretWord.wordDisplay() + '\n');
+    console.log('\n' + secretWord.wordDisplay() + '\n');
     // console.log('\n------------------------------------------------------------')
 
     inquirer.prompt([
@@ -58,6 +53,20 @@ const playGame = () => {
   });
 };
 
+
+const gameReset = () => {
+    // console.log('------------------------New Word----------------------------')
+    guessesLeft = 12;
+    random = words[Math.floor(Math.random() * words.length)];
+    secretWord = new Word(random);
+    secretWord.newWord(random);
+    chickenNugget = secretWord.wordDisplay();
+    // console.log(secretWord.wordDisplay());
+    // console.log('\n------------------------------------------------------------')
+    playGame()
+}
+
+console.log('New Word\n')
 gameReset();
 
 
