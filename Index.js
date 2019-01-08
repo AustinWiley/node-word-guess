@@ -51,14 +51,11 @@ const playGame = () => {
 };
 
 const gameReset = () => {
-    // console.log('------------------------New Word----------------------------')
     guessesLeft = 12;
     random = words[Math.floor(Math.random() * words.length)];
     secretWord = new Word(random);
     secretWord.newWord(random);
     progressDisplay = secretWord.wordDisplay();
-    // console.log(secretWord.wordDisplay());
-    // console.log('\n------------------------------------------------------------')
     playGame()
 };
 
