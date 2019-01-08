@@ -14,8 +14,8 @@ const gameReset = () => {
     secretWord = new Word(random);
     secretWord.newWord(random);
     chickenNugget = secretWord.wordDisplay();
-    console.log(secretWord.wordDisplay());
-    console.log('\n------------------------------------------------------------')
+    // console.log(secretWord.wordDisplay());
+    // console.log('\n------------------------------------------------------------')
     playGame()
 }
 
@@ -25,11 +25,22 @@ const checkGame = () => {
         console.log("INCORRECT :( ")
     } else if (meatBall !== chickenNugget) {
         console.log('CORRECT!!!')
+    };
+    chickenNugget = meatBall;
+
+    if (meatBall === random) {
+        console.log('You Got it!!!')
+        gameReset();
+    } else if (meatBall !== random) {
+        playGame();
     }
 }
 
 
 const playGame = () => {
+    console.log(secretWord.wordDisplay() + '\n');
+    // console.log('\n------------------------------------------------------------')
+
     inquirer.prompt([
     // Here we create a basic text prompt.
     {
