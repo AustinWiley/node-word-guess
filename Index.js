@@ -63,5 +63,5 @@ String.prototype.capitalize = function () {
     return this.charAt(0).toUpperCase() + this.slice(1)
 };
 
-console.log('----------------New Word--------------------\n')
+console.log('----------------New Word---Adventure Time Chracter-----------------\n')
 gameReset();
