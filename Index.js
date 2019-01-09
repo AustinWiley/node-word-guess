@@ -35,26 +35,26 @@ const checkGame = () => {
 const playGame = () => {
     console.log('\n' + secretWord.wordDisplay().capitalize() + '\n');
     inquirer.prompt([
-            // Here we create a basic text prompt.
-            {
-                type: "input",
-                message: "Guess a letter! ",
-                name: "userguess"
-            },
-        ])
-        .then(function (res) {
-            // check results
-            let userguess = res.userguess.toLowerCase();
-            secretWord.guessCheck(userguess)
-            checkGame();
-        });
+        // Here we create a basic text prompt.
+        {
+            type: "input",
+            message: "Guess a letter! ",
+            name: "userguess"
+        },
+    ])
+    .then(function (res) {
+        // check results
+        let userguess = res.userguess.toLowerCase();
+        secretWord.guessCheck(userguess)
+        checkGame();
+    });
 };
 
 const gameReset = () => {
     guessesLeft = 12;
     random = words[Math.floor(Math.random() * words.length)];
     secretWord = new Word(random);
-    secretWord.newWord(random);
+    // secretWord.newWord(random);
     progressDisplay = secretWord.wordDisplay();
     playGame()
 };
