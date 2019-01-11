@@ -30,7 +30,7 @@ Word Guess command-line game using constructor functions.  App is broken down in
 
 ### Instructions on how to use node-constructor-word-guess
 
-1. Copy the `node-constructor-word-guess` repository to your computer.  Navigate to the root of your project and run `npm install` in a terminal to download the nessesary `inquirer` npm packages.  
+1. Copy the `node-constructor-word-guess` repository to your computer.  Navigate to the root of your project and run `npm install` in a terminal to download the nessesary `inquirer` npm package.  
    
 2. Open a node termial to run the `index.js` file.
      
