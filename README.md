@@ -18,9 +18,9 @@ Word Guess command-line game using constructor functions.  App is broken down in
 
   * An array of `new` Letter objects representing the letters of the underlying word
 
-  * A function that returns a string representing the word. This will call the `display()` function on each letter object (the first function defined in `Letter.js`) that displays the character or an underscore and will concatinate it all together.
+  * A function that returns a string representing the word. This will call the `letterDisplay()` function on each letter object (the first function defined in `Letter.js`) that displays the character or an underscore and will concatinate it all together.
 
-  * A function that takes an inputfrom the player as an argument and calls the 'check()' function on each letter object (the second function defined in `Letter.js`)
+  * A function that takes an inputfrom the player as an argument and calls the `letterCheck` function on each letter object (the second function defined in `Letter.js`)
 
 * **index.js**: The file containing the logic for the course of the game, which depends on `Word.js` and:
 
@@ -28,13 +28,11 @@ Word Guess command-line game using constructor functions.  App is broken down in
 
   * Prompts the user for each guess and keeps track of the user's remaining guesses
 
-### Instructions on how to node-constructor-word-guess
+### Instructions on how to use node-constructor-word-guess
 
 1. Copy the `node-constructor-word-guess` repository to your computer.  Navigate to the root of your project and run `npm install` in a terminal to download the nessesary `inquirer` npm packages.  
    
 2. Open a node termial to run the `index.js` file.
-
-4. liri.js can take in one of the following commands:
      
 ### NPM Package used
 
