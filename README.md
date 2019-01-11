@@ -4,7 +4,7 @@
 
 Word Guess command-line game using constructor functions.  App is broken down into three separate `.js` files.
 
-* **Letter.js**: Contains a constructor, Letter. This constructor can display an underlying character or a blank placeholder, depending on whether or not the user has guessed the letter. That constructor defines:
+* **Letter.js**: Contains a constructor, `Letter`. This constructor can display an underlying character or a blank placeholder, depending on whether or not the user has guessed the letter. That constructor defines:
 
   * A string value to store the underlying character for the letter
 
@@ -14,7 +14,7 @@ Word Guess command-line game using constructor functions.  App is broken down in
 
   * A function that takes a character as an argument and checks it against the underlying character, updating the stored boolean value to true if it was guessed correctly
 
-* **Word.js**: Contains a constructor, Word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. The constructor defines:
+* **Word.js**: Contains a constructor, `Word` that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. The constructor defines:
 
   * An array of `new` Letter objects representing the letters of the underlying word
 
