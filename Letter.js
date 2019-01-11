@@ -1,7 +1,7 @@
 const Letter = function (letter) {
     this.character = letter,
     this.guessedStatus = false,
-    this.LetterDisplay = function () {
+    this.letterDisplay = function () {
         if (this.character === ' ') {
             return ' ';
         } else if (this.guessedStatus) {

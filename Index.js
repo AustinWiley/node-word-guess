@@ -1,7 +1,7 @@
 const inquirer = require('inquirer')
 const Word = require('./Word.js');
 
-const words = ["lemongrab", "huntress", "marceline", "lsp", "bmo", "bubblegum", "prismo", "jake the dog", "simon", "ice  king", "finn  the  human", "peppermint  buttler"];
+const words = ["jurassic park", "airplane", "home alone", "cliff hanger", "forest gump", "titanic", "fargo", "clueless", "braveheart", "the mask", "the goonies", "blade runner"];
 let guessesLeft = 12;
 let random;
 let secretWord;
@@ -63,5 +63,5 @@ String.prototype.capitalize = function () {
     return this.charAt(0).toUpperCase() + this.slice(1)
 };
 
-console.log('----------------New Word---Adventure Time Chracter-----------------\n')
+console.log('\n-------------------Movies Word Guess-----------------\n')
 gameReset();

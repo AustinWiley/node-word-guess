@@ -7,7 +7,7 @@ const Word = function (word) {
     this.wordDisplay = function () {
         let displayWord = [];
         for (let j = 0; j < this.letters.length; j++) {
-            displayWord.push(this.letters[j].LetterDisplay())
+            displayWord.push(this.letters[j].letterDisplay())
         }
         return displayWord.join('');
     },
