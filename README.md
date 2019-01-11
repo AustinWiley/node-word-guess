@@ -2,9 +2,7 @@
 
 ### Overview
 
-Word Guess command-line game using constructor functions.  
-
-![Word Guess Cli](Images/01-WordGuess-Cli.gif)
+Word Guess command-line game using constructor functions.  App is broken down into three separate `.js` files.
 
 * **Letter.js**: Contains a constructor, Letter. This constructor can display an underlying character or a blank placeholder, depending on whether or not the user has guessed the letter. That constructor defines:
 
@@ -37,9 +35,6 @@ Word Guess command-line game using constructor functions.
 2. Open a node termial to run the `index.js` file.
 
 4. liri.js can take in one of the following commands:
-
- #### NOTE
- * In additi
      
 ### NPM Package used
 
