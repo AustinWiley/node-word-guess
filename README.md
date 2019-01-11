@@ -12,15 +12,15 @@ Word Guess command-line game using constructor functions.  App is broken down in
 
   * A function that returns the underlying character if the letter has been guessed, or a placeholder if the letter has not been guessed
 
-  * A function that takes an input from the player and checks it against the underlying character, updating the stored boolean value to true if it was guessed correctly
+  * A function that takes a character as an argument and checks it against the underlying character and updates the stored boolean value to true if it was guessed correctly
 
 * **Word.js**: Contains a constructor, `Word` that depends on the `Letter` constructor. This is used to create an object representing the current word the user is attempting to guess. The constructor defines:
 
   * An array of `new` Letter objects representing the letters of the underlying word
 
-  * A function that returns a string representing the word. This should call the function on each letter object (the first function defined in `Letter.js`) that displays the character or an underscore and concatenate those together.
+  * A function that returns a string representing the word. This will call the `display()` function on each letter object (the first function defined in `Letter.js`) that displays the character or an underscore and will concatinate it all together.
 
-  * A function that takes a character as an argument and calls the guess function on each letter object (the second function defined in `Letter.js`)
+  * A function that takes an inputfrom the player as an argument and calls the 'check()' function on each letter object (the second function defined in `Letter.js`)
 
 * **index.js**: The file containing the logic for the course of the game, which depends on `Word.js` and:
 
