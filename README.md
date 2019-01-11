@@ -2,17 +2,9 @@
 
 ### Overview
 
-Word Guess command-line game using constructor functions.
+Word Guess command-line game using constructor functions.  
 
 ![Word Guess Cli](Images/01-WordGuess-Cli.gif)
-
-## Instructions
-
-The completed game should meet the following criteria:
-
-1. The completed game should be able to receive user input using the `inquirer` or `prompt` npm packages.
-
-2. Your solution should have, at minimum, three files:
 
 * **Letter.js**: Contains a constructor, Letter. This constructor can display an underlying character or a blank placeholder, depending on whether or not the user has guessed the letter. That constructor defines:
 
@@ -20,11 +12,11 @@ The completed game should meet the following criteria:
 
   * A boolean value that stores whether that letter has been guessed yet
 
-  * A function that returns the underlying character if the letter has been guessed, or a placeholder (like an underscore) if the letter has not been guessed
+  * A function that returns the underlying character if the letter has been guessed, or a placeholder if the letter has not been guessed
 
   * A function that takes a character as an argument and checks it against the underlying character, updating the stored boolean value to true if it was guessed correctly
 
-* **Word.js**: Contains a constructor, Word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. That means the constructor should define:
+* **Word.js**: Contains a constructor, Word that depends on the Letter constructor. This is used to create an object representing the current word the user is attempting to guess. The constructor defines:
 
   * An array of `new` Letter objects representing the letters of the underlying word
 
@@ -37,10 +29,6 @@ The completed game should meet the following criteria:
   * Randomly selects a word and uses the `Word` constructor to store it
 
   * Prompts the user for each guess and keeps track of the user's remaining guesses
-
-3. `Letter.js` *should not* `require` any other files.
-
-4. `Word.js` *should only* require `Letter.js`
 
 ### Instructions on how to node-constructor-word-guess
 
