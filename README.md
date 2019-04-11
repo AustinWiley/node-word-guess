@@ -2,6 +2,7 @@
 
 ### Overview
 
+
 Word Guess command-line game using constructor functions.  App is broken down into three separate `.js` files.
 
 * **Letter.js**: Contains a constructor, `Letter`. This constructor can display an underlying character or a blank placeholder, depending on whether or not the user has guessed the letter. That constructor defines:
